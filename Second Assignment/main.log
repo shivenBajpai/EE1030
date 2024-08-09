@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.3)  6 AUG 2024 20:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  9 AUG 2024 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1393,12 +1393,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
 
  []
 
@@ -1408,18 +1403,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--118
  []
 
 
-Underfull \hbox (badness 6047) in paragraph at lines 118--119
-[]\OT1/txr/m/n/12 If $[] [] [] 2\OML/txmi/m/it/12 x \OT1/txr/m/n/12 + [] \OML/t
-xmi/m/it/12 x [] \OT1/txr/m/n/12 2\OML/txmi/m/it/12 x [] x \OT1/txr/m/n/12 =
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 6047) in paragraph at lines 119--120
+[]\OT1/txr/m/n/12 If $[] [] [] 2\OML/txmi/m/it/12 x \OT1/txr/m/n/12 + [] \OML/t
+xmi/m/it/12 x [] \OT1/txr/m/n/12 2\OML/txmi/m/it/12 x [] x \OT1/txr/m/n/12 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
@@ -1430,6 +1425,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--140
 
  []
 
@@ -1444,9 +1449,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30451 strings out of 474222
- 595606 string characters out of 5748734
- 1946975 words of memory out of 5000000
+ 30453 strings out of 474222
+ 595623 string characters out of 5748734
+ 1947975 words of memory out of 5000000
  52014 multiletter control sequences out of 15000+600000
  617926 words of font info for 154 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1459,10 +1464,10 @@ ublic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
 s/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 59634 bytes).
+Output written on main.pdf (2 pages, 61056 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 31 named destinations out of 1000 (max. 500000)
+ 102 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 33 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
