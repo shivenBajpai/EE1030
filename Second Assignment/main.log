@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  10 AUG 2024 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  10 AUG 2024 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1377,28 +1377,28 @@ dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 187--189
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 
  []
 
 
-Underfull \hbox (badness 6047) in paragraph at lines 230--231
+Underfull \hbox (badness 6047) in paragraph at lines 236--237
 []\OT1/txr/m/n/12 If $[] [] [] 2\OML/txmi/m/it/12 x \OT1/txr/m/n/12 + [] \OML/t
 xmi/m/it/12 x [] \OT1/txr/m/n/12 2\OML/txmi/m/it/12 x [] x \OT1/txr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--251
+Underfull \hbox (badness 10000) in paragraph at lines 247--257
 
  []
 
@@ -1415,7 +1415,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  30495 strings out of 474222
  595920 string characters out of 5748734
- 1972975 words of memory out of 5000000
+ 1973975 words of memory out of 5000000
  52014 multiletter control sequences out of 15000+600000
  617926 words of font info for 154 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1428,7 +1428,7 @@ ublic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
 s/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 68667 bytes).
+Output written on main.pdf (2 pages, 68647 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams
