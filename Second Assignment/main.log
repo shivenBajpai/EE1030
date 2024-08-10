@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  9 AUG 2024 19:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  10 AUG 2024 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,29 +1358,8 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
-[]\OT1/txr/m/n/12 The num-ber of real so-lu-tions of the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
-\OT1/txr/m/n/12 equa-tion $[][] [] =
- []
-
-
-Underfull \hbox (badness 4660) in paragraph at lines 73--76
-[] \OMS/txsy/m/n/12 ^^@ [][] []$ \OT1/txr/m/n/12 ly-ing in
- []
-
-
-Underfull \hbox (badness 6825) in paragraph at lines 73--76
-\OT1/txr/m/n/12 trig-no-met-ric func-tion $[][] \OML/txmi/m/it/12 x$ \OT1/txr/m
-/n/12 and $[][] \OML/txmi/m/it/12 x$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
-
+Underfull \hbox (badness 4995) in paragraph at lines 73--75
+\OT1/txr/m/n/12 tion $[][] [] = [] \OMS/txsy/m/n/12 ^^@
  []
 
 
@@ -1391,16 +1370,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
 Underfull \hbox (badness 10000) in paragraph at lines 77--79
 [][] []$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-
  []
 
 
@@ -1529,7 +1498,7 @@ ublic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
 s/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 68398 bytes).
+Output written on main.pdf (2 pages, 68679 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams
