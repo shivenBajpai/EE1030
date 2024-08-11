@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  10 AUG 2024 23:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.8)  11 AUG 2024 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1392,13 +1392,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--229
  []
 
 
-Underfull \hbox (badness 6047) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
+
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 239--240
 []\OT1/txr/m/n/12 If $[] [] [] 2\OML/txmi/m/it/12 x \OT1/txr/m/n/12 + [] \OML/t
 xmi/m/it/12 x [] \OT1/txr/m/n/12 2\OML/txmi/m/it/12 x [] x \OT1/txr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--257
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--261
 
  []
 
@@ -1428,7 +1443,7 @@ ublic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
 s/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 68647 bytes).
+Output written on main.pdf (2 pages, 69724 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams
