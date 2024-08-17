@@ -78,36 +78,47 @@
 \textbf{Solution: }\\
 \begin{enumerate}
 	\item{
-			\begin{align*} m = B-A &= \myvec{3 \\ -2} - \myvec{-1 \\ 4} \\
+			\begin{align} m = B-A &= \myvec{3 \\ -2} - \myvec{-1 \\ 4} \\
 				&= \myvec{4 \\ -6} \\
 				&= 4\myvec{1 \\ \frac{-3}{2}}
-		\end{align*}
+		\end{align}
 		$\therefore \text{slope is } \frac{3}{2}$
 	}
 	\item{
-			\begin{align*} m = B-A &= \myvec{3 \\ -2} - \myvec{7 \\ -2} \\
+			\begin{align} m = B-A &= \myvec{3 \\ -2} - \myvec{7 \\ -2} \\
 				&= \myvec{-4 \\ 0} \\
 				&= -4\myvec{1 \\ 0}
-		\end{align*}
+		\end{align}
 		$\therefore \text{slope is } 0$
 	}
 	\item{
-			\begin{align*} m = B-A &= \myvec{3 \\ -2} - \myvec{3 \\ 4} \\
+			\begin{align} m = B-A &= \myvec{3 \\ -2} - \myvec{3 \\ 4} \\
 				&= \myvec{0 \\ -6} \\
 				&= 6\myvec{0 \\ -1}
-		\end{align*}
+		\end{align}
 		$\therefore \text{slope is } -\infty$
 	}
 	\item{
-			\begin{align*} m &= \myvec{\cos \alpha \\ \sin \alpha} \\
+			\begin{align} m &= \myvec{\cos \alpha \\ \sin \alpha} \\
 				&= \myvec{\cos 60\degree \\ \sin 60\degree} \\
 				&= \myvec{\frac{1}{2} \\ \frac{\sqrt{3}}{2}} \\
-				&= \frac{1}{2} \myvec{1 \\ \sqrt{3}} \\
-		\end{align*}
+				&= \frac{1}{2} \myvec{1 \\ \sqrt{3}}
+		\end{align}
 		$\therefore \text{slope is } \sqrt{3}$
 	}
 \end{enumerate}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\columnwidth]{Figures/Figure.png}
+	\caption{A plot of all lines}
+	\label{fig}
+\end{figure}
+
+Code for plotting points and vector arithmetic
+\begin{lstlisting}
+	Codes/linear.py
+\end{lstlisting}
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
