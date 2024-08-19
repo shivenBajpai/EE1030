@@ -35,10 +35,10 @@ x_AB3 = line_dir_pt(m_3,A,k1,k2)
 x_AQ = line_dir_pt(m_4,A,k1,k2)
 
 #Plotting all lines
-plt.plot(x_AB1[0,:],x_AB1[1,:],label='Subpart 1)',c="blue")
-plt.plot(x_AB2[0,:],x_AB2[1,:],label='Subpart 2)',c="g")
-plt.plot(x_AB3[0,:],x_AB3[1,:],label='Subpart 3)',c="r")
-plt.plot(x_AQ[0,:],x_AQ[1,:],label='Subpart 4)',c="black")
+plt.plot(x_AB1[0,:],x_AB1[1,:],label='(1) m = -3/2',c="blue")
+plt.plot(x_AB2[0,:],x_AB2[1,:],label='(2) m = 0',c="g")
+plt.plot(x_AB3[0,:],x_AB3[1,:],label='(3) m = ∞',c="r")
+plt.plot(x_AQ[0,:],x_AQ[1,:],label='(4) m = √3',c="black")
 
 colors = ['black','blue','green','r']
 #Labeling the coordinates
