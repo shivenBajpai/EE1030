@@ -18,8 +18,8 @@ import shlex
 #end if
 
 #Given points
-A = np.array(([-1,3])).reshape(-1,1)
-B = np.array(([2,5])).reshape(-1,1)
+A = np.array(([-2,2])).reshape(-1,1)
+B = np.array(([2,-4])).reshape(-1,1)
 
 #Ratio
 n=4/3
@@ -42,14 +42,14 @@ for i, txt in enumerate(vert_labels):
     plt.annotate(f'{txt}\n({tri_coords[0,i]:.2f}, {tri_coords[1,i]:.2f})',
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
                  textcoords="offset points", # how to position the text
-                 xytext=(20,-20), # distance from text to points (x,y)
+                 xytext=(50,0), # distance from text to points (x,y)
                  ha='center') # horizontal alignment can be left, right or center
 
 ax = plt.gca()
 ax.plot()
 plt.legend(loc='best')
 plt.grid() 
-plt.axis([-2,6,-2,6])
+plt.axis([-5,5,-5,5])
 
 #if using termux
 #plt.savefig('chapters/10/7/2/1/figs/fig.pdf')
