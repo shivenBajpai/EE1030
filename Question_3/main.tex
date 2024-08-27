@@ -72,19 +72,39 @@
 
 \textbf{Question: } Three points $P\brak{h, k}$, $Q\brak{x_1, y_1}$ and $R\brak{x_2, y_2}$ lie on a line. Show that \begin{align*}\frac{h-x_1}{y_2-y_1} = \frac{k - y_1}{x_2 - x_1}\end{align*}
 
-\textbf{Solution: } 
+    \textbf{Solution: }  Since the points P, Q, R are collinear, The matrix $\myvec{P-Q & R-Q}$ must have rank 1.
 
+\begin{align*}
+    \myvec{P-Q & R-Q}^T &= \myvec{h-x_1 & x_2 - x_1 \\ y-y_1 & y_2-y_1}\\
+    \text{Using  } R_2 &\leftarrow R_2 - \frac{k-y_1}{h-x_1}R_1\\
+    &= \myvec{h-x_1 & x_2 - x_1 \\ 0 & y_2-y_1 -\frac{\brak{k-y_1}\brak{{x_2 - x_1}}}{h-x_1}}
+\end{align*}
+
+Since matrix has rank 1, we can say
+
+\begin{align*}
+    y_2-y_1 -\frac{\brak{k-y_1}\brak{{x_2 - x_1}}}{h-x_1} &= 0\\
+    \frac{h-x_1}{y_2-y_1} &= \frac{k - y_1}{x_2 - x_1}
+\end{align*}
+
+\newpage
 
 \begin{figure}[H]
 	\centering
-	%\includegraphics[width=0.75\columnwidth]{Figures/Figure.png}
-	\caption{FILL}
+	\includegraphics[width=0.75\columnwidth]{Figures/Figure.png}
 	\label{fig}
 \end{figure}
 
-Code for this plot
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\columnwidth]{Figures/output.png}
+	\label{fig}
+\end{figure}
+
+Code for this plot can be found at:
 \begin{lstlisting}
-	Codes/FILL
+    Codes/main.py
+    Codes/main.c
 \end{lstlisting}
 
 \end{document}
