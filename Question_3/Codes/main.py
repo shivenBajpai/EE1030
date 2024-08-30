@@ -19,8 +19,10 @@ import shlex
 # end if
 
 clib = ctypes.CDLL('./main.so')
-data = np.array([0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0], dtype=np.float32)
-res = clib.get_data(data.ctypes.data_as(ctypes.POINTER(ctypes.c_float)))
+data = np.array([0.0,0.0,0.0,0.0,0.0,0.0], dtype=np.float32)
+lhs = ctypes.c_float(0.0)
+rhs = ctypes.c_float(0.0)
+res = clib.get_data(data.ctypes.data_as(ctypes.POINTER(ctypes.c_float)), ctypes.pointer(lhs), ctypes.pointer(rhs))
 
 # Given points
 A = np.array((data[:2])).reshape(-1,1)
@@ -30,8 +32,8 @@ C = np.array((data[4:6])).reshape(-1,1)
 print("Taking point P to be:", A)
 print("Taking point Q to be:", B)
 print("Taking point R to be:", C)
-print("Calculated LHS to be:", data[6]) 
-print("Calculated RHS to be:", data[7]) 
+print("Calculated LHS to be:", lhs.value) 
+print("Calculated RHS to be:", rhs.value) 
 
 # Generating all lines
 x_AB = line_gen(A,B)
