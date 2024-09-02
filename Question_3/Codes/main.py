@@ -18,20 +18,25 @@ import subprocess
 import shlex
 # end if
 
+class Point(ctypes.Structure):
+    _fields_ = [('x', ctypes.c_float),
+                ('y', ctypes.c_float)]
+
 clib = ctypes.CDLL('./main.so')
-data = np.array([0.0,0.0,0.0,0.0,0.0,0.0], dtype=np.float32)
+#data = np.array([0.0,0.0,0.0,0.0,0.0,0.0], dtype=ctypes.byref(point))
+points = (Point * 3)()
 lhs = ctypes.c_float(0.0)
 rhs = ctypes.c_float(0.0)
-res = clib.get_data(data.ctypes.data_as(ctypes.POINTER(ctypes.c_float)), ctypes.pointer(lhs), ctypes.pointer(rhs))
+res = clib.get_data(ctypes.byref(points), ctypes.byref(lhs), ctypes.byref(rhs))
 
 # Given points
-A = np.array((data[:2])).reshape(-1,1)
-B = np.array((data[2:4])).reshape(-1,1)
-C = np.array((data[4:6])).reshape(-1,1)
+A = np.array((points[0].x, points[0].y)).reshape(-1,1)
+B = np.array((points[1].x, points[1].y)).reshape(-1,1)
+C = np.array((points[2].x, points[2].y)).reshape(-1,1)
 
-print("Taking point P to be:", A)
-print("Taking point Q to be:", B)
-print("Taking point R to be:", C)
+print("Taking point P to be:\n", A)
+print("Taking point Q to be:\n", B)
+print("Taking point R to be:\n", C)
 print("Calculated LHS to be:", lhs.value) 
 print("Calculated RHS to be:", rhs.value) 
 
