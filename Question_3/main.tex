@@ -70,9 +70,24 @@
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 
-\textbf{Question: } Three points $P\brak{h, k}$, $Q\brak{x_1, y_1}$ and $R\brak{x_2, y_2}$ lie on a line. Show that \begin{align*}\frac{h-x_1}{y_2-y_1} = \frac{k - y_1}{x_2 - x_1}\end{align*}
+\textbf{Question: } Three points $P\myvec{h & k}$, $Q\myvec{x_1 & y_1}$ and $R\myvec{x_2 & y_2}$ lie on a line. Show that \begin{align*}\frac{h-x_1}{y_2-y_1} = \frac{k - y_1}{x_2 - x_1}\end{align*}
 
-    \textbf{Solution: }  Since the points P, Q, R are collinear, The matrix $\myvec{P-Q & R-Q}$ must have rank 1.
+\textbf{Solution: } Given:
+\begin{center}
+\begin{tabular}{| c | c | c |}
+    \hline
+    \textbf{Point} & \textbf{x} & \textbf{y}\\
+    \hline
+    P & $h$ & $k$\\
+    \hline
+    Q & $x_1$ & $y_1$\\
+    \hline
+    R & $x_2$ & $y_2$\\
+    \hline
+\end{tabular}
+\end{center}
+    
+Since the points P, Q, R are collinear, The matrix $\myvec{P-Q & R-Q}$ must have rank 1.
 
 \begin{align*}
     \myvec{P-Q & R-Q}^T &= \myvec{h-x_1 & x_2 - x_1 \\ y-y_1 & y_2-y_1}\\
@@ -99,11 +114,14 @@ Since matrix has rank 1, we can say
 Console Output:
 \begin{verbatim}
 /mnt/D/Cl/EE1030/Question_3/Codes$ python3 main.py 
-Taking point P to be: [[1.]
+Taking point P to be:
+ [[1.]
  [2.]]
-Taking point Q to be: [[2.]
+Taking point Q to be:
+ [[2.]
  [4.]]
-Taking point R to be: [[3.]
+Taking point R to be:
+ [[3.]
  [6.]]
 Calculated LHS to be: 2.0
 Calculated RHS to be: 2.0
