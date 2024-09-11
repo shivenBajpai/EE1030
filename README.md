@@ -1,2 +1,2 @@
 # EE1030
-Repo for College Latex Assignments
+Repo for College Assignments
