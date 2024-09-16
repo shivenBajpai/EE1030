@@ -1,23 +1,32 @@
 #include <math.h>
 #include <stdlib.h>
-#include <assert.h>
 
 #define PI 3.14159
 
 // Struct to represent 3 dimensional vectors
 typedef struct {
-    float x;
-    float y;
-    float z;
-    float norm;
+    double x;
+    double y;
+    double z;
 } Vector;
 
-// Create teh desired vector
-Vector* get_vector() {
+// Calculate the cosines, given 2 angles
+Vector* calculate_cosines(double alpha, double beta) {
+    
+    // Convert to radians
+    alpha = alpha*PI/180;
+    beta = beta*PI/180;
+
+    // Calculate cosines
+    double cos_alpha = cos(alpha);
+    double cos_beta = cos(beta);
+    double cos_gamma = sqrt(1 - pow(cos_alpha,2) - pow(cos_beta,2));
+    
+    // Create and populate struct
     Vector* vector = malloc(sizeof(Vector));
-    vector->x = cos(60 * PI / 180);
-    vector->y = cos(45 * PI / 180);
-    vector->z = cos(45 * PI / 180);
-    vector->norm = sqrt(pow(vector->x, 2) + pow(vector->y, 2) + pow(vector->z, 2));
+    vector->x = cos_alpha;
+    vector->y = cos_gamma;
+    vector->z = cos_beta;
+
     return vector;
 }
