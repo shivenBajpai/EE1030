@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.10)  15 SEP 2024 00:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.10)  16 SEP 2024 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1910,7 +1910,7 @@ f-dist/fonts/enc/dvips/base/8r.enc}
 <Figures/Figure.png, id=42, 462.528pt x 346.896pt>
 File: Figures/Figure.png Graphic file (type png)
 <use Figures/Figure.png>
-Package pdftex.def Info: Figures/Figure.png  used on input line 99.
+Package pdftex.def Info: Figures/Figure.png  used on input line 106.
 (pdftex.def)             Requested size: 273.14647pt x 204.868pt.
  [2 <./Figures/Figure.png>] (./main.aux)
  ***********
@@ -1934,7 +1934,7 @@ exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb>
-Output written on main.pdf (2 pages, 84252 bytes).
+Output written on main.pdf (2 pages, 77038 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream
