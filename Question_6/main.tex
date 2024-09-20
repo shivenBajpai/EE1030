@@ -99,4 +99,77 @@ Code for this plot can be found at:
     Codes/main.c
 \end{lstlisting}
 
+\textbf{Alternate Solution: } Let the vertices of triangle be $\vec{A}$, $\vec{B}$ and $\vec{C}$ and lengths of the sides opposing them be denoted by $a = 5cm$, $b = 6cm$ and $c = 7cm$ respectively.
+\\
+
+Let $\vec{A} = \vec{0}$ and $\vec{C} = \myvec{b \\ 0}$, then $\vec{B}$ satisfies
+
+\begin{align*}
+	\Vert \vec{x} - \vec{A} \Vert &= c\\
+	\Vert \vec{x} - \vec{C} \Vert &= a
+\end{align*}
+
+Since a point that lies on 2 circles lies on their radical axis, $\vec{B}$ lies on the line
+
+\begin{align*}
+	\Vert \vec{x}\Vert^2 - 2\vec{C}^\text{T}\vec{x} + b^2 - a^2 &= \Vert \vec{x}\Vert^2 - 2\vec{A}^\text{T}\vec{x} - c^2 \\
+	(\vec{C}-\vec{A})^\text{T}\vec{x} &= \frac{b^2 + c^2 - a^2}{2}
+\end{align*}
+
+Let $\vec{n} = (\vec{C} - \vec{A})$ and $d = \frac{b^2 + c^2 - a^2}{2}$
+\\
+
+Then parametric form of line is $\vec{x} = \vec{h} + k\vec{m}$
+
+Where $\vec{h} = \frac{\vec{n}d}{\Vert \vec{n} \Vert^2}$ and $\vec{m}$ be perpendicular to $\vec{n}$ i.e $\vec{m} = \myvec{-\vec{n}_2 \\ \vec{n}_1}$
+\\
+
+Substituting $\vec{x}$ in equation of circle
+\begin{align*}
+	(\vec{h} + k\vec{m} - \vec{A})^\text{T} (\vec{h} + \vec{k}m - \vec{A}) &= c^2\\
+	((\vec{h} - \vec{A}) + k\vec{m})^\text{T} ((\vec{h} - \vec{A}) + k\vec{m}) &= c^2\\
+	(\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) + 2k\vec{m}^\text{T}(\vec{h} - \vec{A}) + k^2\vec{m}\vec{m}^\text{T} &= c^2
+\end{align*}
+
+\text{Since $\vec{m}^T\vec{h} = 0$}
+\begin{align*}
+	(\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) - 2k\vec{m}^\text{T}\vec{A} + k^2\vec{m}\vec{m}^\text{T} &= c^2	
+\end{align*}
+
+Using quadratic formula for k,
+
+$$k = \frac{2\vec{m}^\text{T}\vec{A} \pm \sqrt{4(\vec{m}^\text{T}\vec{A})^2 - 4 (\vec{m}\vec{m}^\text{T})((\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) - c^2)}}{2\vec{m}\vec{m}^\text{T}}$$
+
+$$k = \frac{\vec{m}^\text{T}\vec{A} \pm \sqrt{(\vec{m}^\text{T}\vec{A})^2 - (\vec{m}\vec{m}^\text{T})((\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) - c^2)}}{\vec{m}\vec{m}^\text{T}}$$
+
+Since we have assumed $\vec{A} = \vec{0}$, We can simplify this to
+
+$$k = \frac{\pm \sqrt{(c^2 - \vec{h}^\text{T}\vec{h})}}{\sqrt{\vec{m}\vec{m}^\text{T}}}$$
+
+Then x is
+
+$$x = \vec{h} \pm \frac{\sqrt{c^2 - \Vert \vec{h} \Vert^2} \; \vec{m}}{\Vert \vec{m} \Vert}$$
+
+Now substituting data,
+
+\begin{align*}
+	d &= 30\\
+	\vec{h} &= \myvec{5 \\ 0}\\
+	\vec{m} &= \myvec{0 \\ 6}\\
+	k &= \pm \frac{\sqrt{24}}{6}\\
+	\vec{B} &= \myvec{5 \\ \pm \sqrt{24}}
+\end{align*}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\columnwidth]{Figures/Alt_Figure.png}
+	\label{fig}
+\end{figure}
+
+Code for this plot can be found at:
+\begin{lstlisting}
+    Codes/alt.py
+    Codes/alt.c
+\end{lstlisting}
+
 \end{document}
