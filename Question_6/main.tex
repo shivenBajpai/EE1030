@@ -128,23 +128,23 @@ Substituting $\vec{x}$ in equation of circle
 \begin{align*}
 	(\vec{h} + k\vec{m} - \vec{A})^\text{T} (\vec{h} + \vec{k}m - \vec{A}) &= c^2\\
 	((\vec{h} - \vec{A}) + k\vec{m})^\text{T} ((\vec{h} - \vec{A}) + k\vec{m}) &= c^2\\
-	(\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) + 2k\vec{m}^\text{T}(\vec{h} - \vec{A}) + k^2\vec{m}\vec{m}^\text{T} &= c^2
+	(\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) + 2k\vec{m}^\text{T}(\vec{h} - \vec{A}) + k^2\vec{m}^\text{T}\vec{m} &= c^2
 \end{align*}
 
 \text{Since $\vec{m}^T\vec{h} = 0$}
 \begin{align*}
-	(\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) - 2k\vec{m}^\text{T}\vec{A} + k^2\vec{m}\vec{m}^\text{T} &= c^2	
+	(\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) - 2k\vec{m}^\text{T}\vec{A} + k^2\vec{m}^\text{T}\vec{m} &= c^2	
 \end{align*}
 
 Using quadratic formula for k,
 
-$$k = \frac{2\vec{m}^\text{T}\vec{A} \pm \sqrt{4(\vec{m}^\text{T}\vec{A})^2 - 4 (\vec{m}\vec{m}^\text{T})((\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) - c^2)}}{2\vec{m}\vec{m}^\text{T}}$$
+$$k = \frac{2\vec{m}^\text{T}\vec{A} \pm \sqrt{4(\vec{m}^\text{T}\vec{A})^2 - 4 (\vec{m}^\text{T}\vec{m})((\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) - c^2)}}{2\vec{m}^\text{T}\vec{m}}$$
 
-$$k = \frac{\vec{m}^\text{T}\vec{A} \pm \sqrt{(\vec{m}^\text{T}\vec{A})^2 - (\vec{m}\vec{m}^\text{T})((\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) - c^2)}}{\vec{m}\vec{m}^\text{T}}$$
+$$k = \frac{\vec{m}^\text{T}\vec{A} \pm \sqrt{(\vec{m}^\text{T}\vec{A})^2 - (\vec{m}^\text{T}\vec{m})((\vec{h} - \vec{A})^\text{T}(\vec{h} - \vec{A}) - c^2)}}{\vec{m}^\text{T}\vec{m}}$$
 
 Since we have assumed $\vec{A} = \vec{0}$, We can simplify this to
 
-$$k = \frac{\pm \sqrt{(c^2 - \vec{h}^\text{T}\vec{h})}}{\sqrt{\vec{m}\vec{m}^\text{T}}}$$
+$$k = \frac{\pm \sqrt{(c^2 - \vec{h}^\text{T}\vec{h})}}{\sqrt{\vec{m}^\text{T}\vec{m}}}$$
 
 Then $\vec{x}$ is
 
