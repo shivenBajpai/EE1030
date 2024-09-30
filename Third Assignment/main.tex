@@ -1,0 +1,166 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+%\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+
+%\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+
+
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+% Marks the beginning of the document
+\begin{document}
+\onecolumn
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+%\renewcommand{\theequation}{\theenumi}
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{Mains - 11.A}
+\author{ai24btech11030 - Shiven Bajpai}
+\maketitle
+
+\section*{Section - A}
+\begin{enumerate}
+\item{ 
+    Let $f\brak{x}= \begin{cases}
+	   (x-1)^2 \sin\frac{1}{x-1}\abs{x} & \text{if} \: x\ne1 \\
+      -1 & \text{if} \: x = 1 
+    \end{cases} $
+    be a real-valued function. Then the set of points where f(x) is not differentiable is........ \hfill (1981 - 2 Marks)
+}\\
+
+\item{
+    Let $f\brak{x}= \begin{cases}
+    \frac{x^3+x^2-16x+20}{(x-2)^2}& \text{if } x \ne 2\\
+    k& \text{if } x = 2
+    \end{cases}$
+    
+    If f(x) is continuous for all x, then k=..... \hfill(1981 - 2 Marks)
+}\\
+
+
+\item{
+    A discontinuous function $y=f(x)$ satisfying $x^2 + y^2 = 4$ is given by $f(x)=$......... \hfill (1982 - 2 Marks)
+}\\
+
+\item {
+    $\lim_{x\to1} (1-x) \tan\frac{\pi x}{2} = $........ \hfill (1984 - 2 Marks)
+}\\
+    
+\item {
+    If $f(x)= \begin{cases}\sin x,& x \ne n\pi, n = 0, \pm1, \pm2, \pm3, ....... \\
+    2,& \text{otherwise}\end{cases}$\\
+    and $g(x) = \begin{cases}x^2 + 1,& x \ne 0, 2\\
+    4,& x=0\\
+    5,& x=2\end{cases}$\\
+    then $\lim_{x\to0} g\sbrak{f\brak{x}} is .......$ \hfill(1986 - 2 Marks)
+}\\
+
+\item {
+    $\lim_{x\to-\infty}\sbrak{\frac{x^4 \sin \brak{\frac{1}{x}} + x^2}{\brak{1 + \abs{x}^3}}} =$ ................ \hfill (1987 - 2 Marks)
+}\\
+
+\item {
+    If $f(9)=9, f^{\prime}(9)=4, \text{then} \lim_{x\to9}\frac{\sqrt{f(x)}-3 }{\sqrt{x}-3}$ equals...........\hfill (1988 - 2 Marks)
+}\\
+
+\item{
+    $ABC$ is an isosceles triangle inscribed in a circle of radius $r$. If $AB = AC$ and $h$ is the altitude from $A$ to $BC$ then the triangle $ABC$ has perimeter $P=2(\sqrt{2hr-h^2})+\sqrt{2hr})$ and area $A=$ .......... also $\lim_{h\to0} \frac{A}{P^3} = $............. \hfill (1989 - 2 Marks)
+}\\
+
+\item {
+    $\lim_{x\to\infty}\brak{\frac{x+6}{x +1}}^{x+4} =$ ............... \hfill (1990 - 2 Marks)
+}\\
+
+\item{
+    Let $f(x) = x\abs{x}$. The set of points where $f(x)$ is twice differentiable is ........... \hfill (1992 - 2 Marks)
+}\\
+
+\item{
+    Let $f(x)= \sbrak{x} \sin\brak{\frac{\pi}{\sbrak{x+1}}}$, where $\sbrak{}$ denotes the greatest integer function. The domain of $f$ is ..... and the points of discontinuity of $f$ in the domain are..... \hfill (1996 - 2 Marks)
+}\\
+
+\item{
+    $\lim_{x\to0} \brak{\frac{1+5x^2}{1+3x^2}}^{\frac{1}{x^2}} =$ ........ \hfill (1996 - 1 Mark)
+}\\
+
+\item{
+    Let $f(x)$ be a continuous function defined for $1 \leq x \leq 3$. If $f(x)$ takes rational values for all $x$ and $f\brak{2} = 10$, then $f\brak{1.5} = $ ............. \hfill (1997 - 2 Marks)
+}\\
+    
+\end{enumerate}
+
+\section*{Section - B}
+\begin{enumerate}
+	\item{
+ If $\lim_{x\to a}\sbrak{f\brak{x}g\brak{x}}$ exists then both $\lim_{x\to a}f(x)$ and $\lim_{x\to a}g(x)$ exist. \hfill (1981 - 2 Marks)
+}
+\end{enumerate}
+
+\section*{Section - C}
+\begin{enumerate}
+	\item{
+ If $f(x) = \sqrt{\frac{x - \sin x}{x + \cos^2 x}}$, then $\lim_{x \to \infty} f\brak{x}$ is \hfill (1979)
+
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item{$0$}
+        \item{$\infty$}
+        \columnbreak
+        \item{$1$}
+        \item{none of these}
+    \end{enumerate}
+    \end{multicols}
+ 
+}
+\end{enumerate}
+\end{document}
+
