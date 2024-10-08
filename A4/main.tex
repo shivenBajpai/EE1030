@@ -1,0 +1,145 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+%\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+
+%\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+
+
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+% Marks the beginning of the document
+\begin{document}
+\onecolumn
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+%\renewcommand{\theequation}{\theenumi}
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{JEEM - 8Jan2020 - Shift2 - 16-30}
+\author{ai24btech11030 - Shiven Bajpai}
+\maketitle
+
+\begin{enumerate}
+    \item The area (in sq. units) of the region ${\brak{x,y} \in \mathcal{R} : x^2 \leq y \leq 3 - 2x}$, is:
+    \begin{multicols}{4}
+    \begin{enumerate}
+        \item $\frac{31}{3}$
+        \item $\frac{32}{3}$
+        \item $\frac{29}{3}$
+        \item $\frac{34}{3}$
+    \end{enumerate}
+    \end{multicols}
+    
+    \item Let $S$ be the set of all functions $f:\sbrak{0,1} \rightarrow \mathcal{R}$, which are continuous on $\sbrak{0, 1}$ and differentiable on $\brak{0, 1}$. Then for every $f$ in $S$, there exists a $c \in \brak{0,1}$, depending on $f$, such that:
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $\frac{\brak{f\brak{1}-f\brak{c}}}{\brak{1-c}} = f^\prime\brak{c} $
+            \item $|f\brak{c} - f\brak{1}| < |f^\prime\brak{c}| $
+            \columnbreak
+            \item $|f\brak{c} + f\brak{1}| < \brak{1 + c}|f ^\prime \brak{c}| $
+            \item $|f\brak{c} - f\brak{1}| < \brak{1 - c}|f^\prime\brak{c}|$
+        \end{enumerate}
+    \end{multicols}
+
+    \item The differential equation of the family of curves, $x^2 = 4b\brak{y + b}, b \in \mathcal{R}$, is:
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item $xy^{\prime\prime} = y^\prime$
+        \item $x\brak{y^\prime} 2 = x + 2yy^\prime$
+        \columnbreak
+        \item $x\brak{y ^\prime } 2 = x - 2yy^\prime$
+        \item $x\brak{y ^\prime } 2 = 2yy ^\prime - x$
+    \end{enumerate}
+    \end{multicols}
+
+    
+    \item The system of linear equations
+    \begin{align*}
+        \lambda x + 2y + 2z &= 5 \\
+        2\lambda x + 3y + 5z &= 8 \\
+        4x + \lambda y + 6z &= 10     
+    \end{align*}
+    has:
+    
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item no solution when $\lambda = 2$
+            \item infinitely many solutions when $\lambda = 2$
+            \columnbreak
+            \item no solution when $\lambda = 8$
+            \item a unique solution when $\lambda = -8$
+        \end{enumerate}
+    \end{multicols}
+    
+    \item If the $10^\text{th}$ term of an A.P. is $\frac{1}{20}$ and its $20^\text{th}$ term is $\frac{1}{10}$ , then the sum of its first 200 terms is:
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $50 \frac{1}{4}$
+            \item $100$
+            \columnbreak
+            \item $50$
+            \item $100 \frac{1}{2}$
+        \end{enumerate}
+    \end{multicols}
+    
+    \item Let a line $y = mx \: \brak{m > 0}$ intersect the parabola, $y^2 = x$ at a point $P$, other than the origin. Let the tangent to it at $P$ meet the x-axis at the point $Q$. If $area\brak{\Delta OPQ} = 4 \text{ sq.units}$, then $m$ is equal to $\ldots$\\
+    
+    \item Let $f\brak{x}$ be a polynomial of degree 3 such that $f\brak{-1} = 10$, $f\brak{1} = -6$, $f\brak{x}$ has a critical point at $x = -1$ and $f^\prime\brak{x}$ has a critical point at $x = 1$. Then the local minima at $x$ = $\ldots$\\
+    
+    \item $\frac{\sqrt{2}\sin\alpha}{\sqrt{1 + \cos2\alpha}} = \frac{1}{7}$ and $\sqrt{\frac{1-\cos2\beta}{2}} = \frac{1}{\sqrt{10}}$, $\alpha, \beta \in \brak{0, \frac{\pi}{2}}$, then $\tan\brak{\alpha + 2\beta}$ is equal to $\ldots$\\
+    
+    \item The number of 4 letter words (with or without meaning) that can be made from the eleven letters of the word ``EXAMINATION'' is $\ldots$\\
+    
+    \item The sum, $\sum_{n=1}^{7}\frac{n\brak{n+1}\brak{2n+1}}{4}$ is equal to $\ldots$\\
+\end{enumerate}
+
+\end{document}
+
