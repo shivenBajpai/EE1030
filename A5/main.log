@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.10)  8 OCT 2024 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.10)  9 OCT 2024 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1904,11 +1904,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 141--144
 
  []
@@ -1945,18 +1940,18 @@ Package rerunfilecheck Info: Checksums for `main.out':
 Here is how much of TeX's memory you used:
  52963 strings out of 474222
  1254444 string characters out of 5748733
- 1954975 words of memory out of 5000000
+ 1955975 words of memory out of 5000000
  74377 multiletter control sequences out of 15000+600000
  626293 words of font info for 174 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,9n,109p,1194b,1026s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,9n,109p,1194b,1028s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 50564 bytes).
+Output written on main.pdf (2 pages, 50666 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  81 compressed objects within 1 object stream
