@@ -1,0 +1,269 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+%\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+
+%\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+
+
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+% Marks the beginning of the document
+\begin{document}
+\onecolumn
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+%\renewcommand{\theequation}{\theenumi}
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{JEEM - 1Sep2021 - Shift1 - 1-15}
+\author{ai24btech11030 - Shiven Bajpai}
+\maketitle
+
+\iffalse
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 
+    \item 
+    \item 
+    \item 
+\end{enumerate}
+\end{multicols}
+\fi
+
+\begin{enumerate}
+    \item Let $f : \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function. Then
+    $\lim_{x \to \frac{\pi}{4}} \frac{\frac{\pi}{4} \int_{2}^{\sec^2 x} f(x) dx}{ x^2 - \frac{\pi^2}{16}}$
+    is equal to: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $f(2)$
+            \item $2f(2)$
+            \item $2f(\sqrt{2})$
+            \item $4f(2)$
+        \end{enumerate}
+    \end{multicols}
+    
+    \item $\cos^{-1}(\cos(-5)) + \sin^{-1}(\sin(6)) - \tan^{-1}(\tan(12))$ is equal to: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $3\pi - 11$
+            \item $4\pi - 9$
+            \item $4\pi - 11$
+            \item $3\pi + 1$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Consider the system of linear equations:
+    $$
+    -x + y + 2z = 0
+    $$
+    $$
+    3x - ay + 5z = 1
+    $$
+    $$
+    2x - 2y - az = 7
+    $$
+    Let $S_1$ be the set of all $a \in \mathbb{R}$ for which the system is inconsistent, and $S_2$ the set of all $a \in \mathbb{R}$ for which the system has infinitely many solutions. If $n(S_1)$ and $n(S_2)$ denote the number of elements in $S_1$ and $S_2$ respectively, then: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $n(S_1) = 2$, $n(S_2) = 2$
+            \item $n(S_1) = 1$, $n(S_2) = 0$
+            \item $n(S_1) = 2$, $n(S_2) = 0$
+            \item $n(S_1) = 0$, $n(S_2) = 2$
+        \end{enumerate}
+    \end{multicols}
+    
+    \item Let the acute angle bisector of the planes $x - 2y - 2z + 1 = 0$ and $2x - 3y - 6z + 1 = 0$ be the plane $P$. Which of the following points lies on $P$? \hfill (1 Sep 2021 S1)
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $(3, 1, -\frac{1}{2})$
+            \item $(-2, 0, -\frac{1}{2})$
+            \item $(0, 2, -4)$
+            \item $(4, 0, -2)$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Which of the following is equivalent to the Boolean expression $p \land \neg q$? \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\neg(q \to p)$
+            \item $\neg p \to \neg q$
+            \item $\neg(p \to \neg q)$
+            \item $\neg(p \to q)$
+        \end{enumerate}
+    \end{multicols}
+    
+    \item Two squares are chosen at random on a chessboard. The probability that they have a side in common is: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\frac{2}{7}$
+            \item $\frac{1}{18}$
+            \item $\frac{1}{7}$
+            \item $\frac{1}{9}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item If $y = y(x)$ is the solution of the differential equation $x^2 dy + \brak{y - \frac{1}{x}} dx = 0$; $x > 0$ and $y(1) = 1$, then $y\brak{\frac{1}{2}}$ is equal to: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\frac{3}{2} - \frac{1}{\sqrt{e}}$
+            \item $3 + \frac{1}{\sqrt{e}}$
+            \item $3 + e$
+            \item $3 - e$
+        \end{enumerate}
+    \end{multicols}
+
+    \item If $n$ is the number of solutions of the equation
+    $$
+    2\cos x\brak{4\sin\brak{\frac{\pi}{4} + x} \sin\brak{\frac{\pi}{4} - x} -1 } = 1, \: x \in [0, \pi],
+    $$
+    and $S$ is the sum of all these solutions, then the ordered pair $(n, S)$ is: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $(3, \frac{13\pi}{9})$
+            \item $(2, \frac{2\pi}{3})$
+            \item $(2, \frac{8\pi}{9})$
+            \item $(3, \frac{5\pi}{3})$
+        \end{enumerate}
+    \end{multicols}
+
+    \item The function $f(x) = x^3 - 6x^2 + ax + b$ is such that $f(2) = f(4) = 0$. Consider two statements:
+    \begin{itemize}
+        \item[(S1)] There exists $x_1, x_2 \in (2, 4)$, $x_1 < x_2$, such that $f'(x_1) = -1$ and $f'(x_2) = 0$.
+        \item[(S2)] There exists $x_3, x_4 \in (2, 4)$, $x_3 < x_4$, such that $f$ is decreasing in $(2, x_4)$, increasing in $(x_4, 4)$ and $2f'(x_3) = \sqrt{3}f(x_4)$.
+    \end{itemize}
+    Then:  \hfill (1 Sep 2021 S1)
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item Both (S1) and (S2) are true
+            \item (S1) is false and (S2) is true
+            \item Both (S1) and (S2) are false
+            \item (S1) is true and (S2) is false
+        \end{enumerate}
+    \end{multicols}
+
+    \item Let 
+    $$
+    J_{n,m} = \int_0^\frac{1}{2} \frac{x^n}{x^m-1} dx, \forall n > m \quad \text{and} \quad n, m \in \mathbb{N}.
+    $$
+    Consider a matrix $A = [a_{ij}]_{3 \times 3}$ where 
+    $$
+    a_{ij} = \begin{cases} 
+    J_{6+i,3} - J_{i+3,3}, & \text{if } i \leq j, \\
+    0, & \text{if } i > j.
+    \end{cases}
+    $$
+    Then $\abs{\text{adj} A^{-1}}$ is: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $(15)^2 \times 2^{42}$
+            \item $(15)^2 \times 2^{34}$
+            \item $(105)^2 \times 2^{38}$
+            \item $(105)^2 \times 2^{36}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item The area enclosed by the curves $y = \abs{\cos x - \sin x}$ and $y = \sin x + \cos x$, and the lines $x = 0$ and $x = \frac{\pi}{2}$ is: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $2\sqrt{2} - 2$
+            \item $2 + 2\sqrt{2}$
+            \item $4 - 2\sqrt{2}$
+            \item $2 + 4\sqrt{2}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item The distance of the line $3y - 2z - 1 = 0 = 3x - z + 4$ from the point $(2, -1, 6)$ is: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\sqrt{26}$
+            \item $2\sqrt{5}$
+            \item $2\sqrt{6}$
+            \item $4\sqrt{2}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Consider the parabola with vertex $\brak{\frac{1}{2}, \frac{3}{4}}$ and the directrix $y = \frac{1}{2}$. Let $P$ be the point where the parabola meets the line $x = -\frac{1}{2}$. If the normal to the parabola at $P$ intersects the parabola again at the point $Q$, then $(PQ)^2$ is equal to: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\frac{75}{8}$
+            \item $\frac{125}{16}$
+            \item $\frac{25}{2}$
+            \item $\frac{15}{2}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item The number of pairs $(a, b)$ of real numbers, such that whenever $\alpha$ is a root of the equation $x^2 + ax + b = 0$, $\alpha^2 - 2$ is also a root of the equation, is: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 6
+            \item 2
+            \item 4
+            \item 8
+        \end{enumerate}
+    \end{multicols}
+
+    \item Let $S_n = 1\cdot(n-1) + 2\cdot(n-2) + \dots + (n-1)\cdot1$, for $n \geq 4$. The sum 
+    $$
+    \sum_{n=4}^{\infty} \brak{\frac{2S_n}{n!} - \frac{1}{(n-2)!}}
+    $$
+    is equal to: \hfill (1 Sep 2021 S1)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\frac{e - 1}{3}$
+            \item $\frac{e - 2}{6}$
+            \item $\frac{e}{3}$
+            \item $\frac{e}{6}$
+        \end{enumerate}
+    \end{multicols}
+\end{enumerate}
+\end{document}
+
