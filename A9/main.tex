@@ -1,0 +1,256 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+%\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+
+%\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+
+
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+% Marks the beginning of the document
+\begin{document}
+\onecolumn
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+%\renewcommand{\theequation}{\theenumi}
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{GATE - XE - 2009 - 49 - 60}
+\author{ai24btech11030 - Shiven Bajpai} 
+\maketitle
+
+\iffalse
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 
+    \item 
+    \item 
+    \item 
+\end{enumerate}
+\end{multicols}
+\fi
+
+\begin{enumerate}
+
+    \item Correlate the material properties given in Column I with the units given in Column II. \hfill (GATE XE 2009)
+
+    \begin{table}[h!]
+    \centering
+    \begin{tabular}{l | l}
+    \textbf{Column I}           & \textbf{Column II} \\
+    \hline
+    P. Magnetic moment          & 1. MN m$^{3/2}$ \\
+    Q. Thermal conductivity      & 2. H m$^{-1}$ \\
+    R. Fracture toughness        & 3. A m$^{2}$ \\
+    S. Electron mobility         & 4. m$^{2}$ V$^{-1}$ s$^{-1}$ \\
+                                & 5. J s$^{-1}$ m$^{-1}$ K$^{-1}$ \\
+    \end{tabular}
+    \end{table}
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item P-2, Q-5, R-1, S-4
+            \item P-4, Q-5, R-1, S-3
+            \item P-3, Q-5, R-1, S-4
+            \item P-3, Q-2, R-4, S-1
+        \end{enumerate}
+    \end{multicols}
+
+    \item If the spacing between two consecutive (110) planes in a BCC material is 0.203 nm, the lattice parameter and radius of the atom of the said material will be  \hfill (GATE XE 2009)
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item 0.242 nm and 0.110 nm
+            \item 0.242 nm and 0.120 nm
+            \item 0.287 nm and 0.134 nm
+            \item 0.287 nm and 0.124 nm
+        \end{enumerate}
+    \end{multicols}
+
+    \item A continuous and aligned carbon fibre reinforced composite is made up of 30 vol\% carbon fibre having a modulus of elasticity of 300 GPa dispersed in a polymer matrix which on hardening has a modulus of elasticity of 4 GPa. What will be the modulus of elasticity of the composite in longitudinal and transverse directions of the carbon fibres respectively? \hfill (GATE XE 2009)
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item 92.8 GPa and 5.7 GPa
+            \item 211.0 GPa and 9.3 GPa
+            \item 304.0 GPa and 7.5 GPa
+            \item 92.8 GPa and 6.7 GPa
+        \end{enumerate}
+    \end{multicols}
+
+    \item A potential of 10 volts is applied across a parallel plate capacitor which has a plate area of $10^{-4} \ \text{m}^2$ and a plate separation of $2 \times 10^{-3} \ \text{m}$. If dielectric constant of the material placed between parallel plates is 10, the capacitance and the magnitude of the charge stored between the plates will be \hfill (GATE XE 2009)
+
+    \begin{enumerate}
+        \item $4.425 \times 10^{-13} \text{F}$ and $4.425 \times 10^{-12} \text{C}$
+        \item $8.850 \times 10^{-13} \ \text{F}$ and $8.850 \times 10^{-12} \ \text{C}$
+        \item $4.425 \times 10^{-12} \ \text{F}$ and $4.425 \times 10^{-11} \ \text{C}$
+        \item $8.850 \times 10^{-12} \ \text{F}$ and $8.850 \times 10^{-11} \ \text{C}$
+    \end{enumerate}
+
+    \item Conductivity of Silicon at 300 K is $3.16 \times 10^{-4} \ \text{ohm}^{-1} \ \text{m}^{-1}$ and that of Germanium is $2.12 \times 10^{-2} \ \text{ohm}^{-1} \ \text{m}^{-1}$ at 300 K. At what temperature would the conductivity of intrinsic Silicon be the same as the conductivity of intrinsic Germanium at 300 K? (Given: $E_g$ of Silicon at 300 K $= 1.12 \ \text{eV}$, $E_g$ of Germanium at 300 K $= 0.72 \ \text{eV}$) \hfill (GATE XE 2009)
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\sim 506 \ \text{K}$
+            \item $\sim 606 \ \text{K}$
+            \item $\sim 726 \ \text{K}$
+            \item $\sim 816 \ \text{K}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item Molecular weight distribution of a polystyrene polymer and the number fraction of polymer chains in the molecular weight range are given below.
+
+    \begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Range of Molecular weight (kg/mol)} & \textbf{Number fraction of polymer chain} \\ \hline
+    5 - 10   & 0.05 \\ \hline
+    10 - 15  & 0.15 \\ \hline
+    15 - 20  & 0.20 \\ \hline
+    20 - 25  & 0.30 \\ \hline
+    25 - 30  & 0.20 \\ \hline
+    30 - 35  & 0.08 \\ \hline
+    35 - 40  & 0.02 \\ \hline
+    \end{tabular}
+    \end{table}
+
+    The number average molecular weight and the number average degree of polymerization will be \hfill (GATE XE 2009)
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item 15.750 kg/mol and 151
+            \item 21.350 kg/mol and 203
+            \item 15.750 kg/mol and 302
+            \item 21.350 kg/mol and 205
+        \end{enumerate}
+    \end{multicols}
+
+    \section*{Common Data Questions}
+
+    \item[] \textbf{Common Data for Questions 19 and 20:}
+
+    Nickel has FCC structure and its lattice parameter is 0.353 nm. Weight of one mole of Nickel is 0.05871 kg.
+
+    \item The Ni-Ni nearest neighbour distance (in nm) is \hfill (GATE XE 2009)
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 0.173
+            \item 0.223
+            \item 0.250
+            \item 0.273
+        \end{enumerate}
+    \end{multicols}
+
+    \item Theoretical density of Nickel (in kg m$^{-3}$) is closer to \hfill (GATE XE 2009)
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 8700
+            \item 8900
+            \item 9100
+            \item 9300
+        \end{enumerate}
+    \end{multicols}
+
+    \item[] \textbf{Common Data for Questions 21 and 22:}
+    
+    The diffusivity of lithium in Silicon is $10^{-9}$ m$^2$ s$^{-1}$ at 1400 K and $10^{-10}$ m$^2$ s$^{-1}$ at 1000 K.
+    
+    \item The value of activation energy (J mol$^{-1}$) of lithium diffusion in silicon is \hfill (GATE XE 2009)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 66086
+            \item 66986
+            \item 67086
+            \item 67986
+        \end{enumerate}
+    \end{multicols}
+
+    \item The value of jump frequency factor of lithium in silicon in m$^2$ s$^{-1}$ is \hfill (GATE XE 2009)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 2.15 $\times$ 10$^{-7}$
+            \item 3.15 $\times$ 10$^{7}$
+            \item 3.15 $\times$ 10$^{-8}$
+            \item 2.15 $\times$ 10$^{-8}$
+        \end{enumerate}
+    \end{multicols}
+
+    \section*{Linked Answer Questions}
+
+    \item[] \textbf{Statement for Linked Answer Questions 23 and 24:}
+
+    Aluminum has a density of 2710 kg m$^{-3}$ and weight of one mole of aluminum is 0.02698 kg. The collision time, $\tau$, for electron scattering in Aluminum is 2 $\times$ 10$^{-14}$ s at 300 K.
+
+    \item The number of free electrons per m$^3$ of Aluminum at 300 K is \hfill (GATE XE 2009)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 6.05 $\times$ 10$^{28}$
+            \item 7.05 $\times$ 10$^{28}$
+            \item 6.05 $\times$ 10$^{27}$
+            \item 7.05 $\times$ 10$^{27}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item The conductivity of aluminum (ohm$^{-1}$ m$^{-1}$) at 300 K is \hfill (GATE XE 2009)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 3.40 $\times$ 10$^{6}$
+            \item 4.40 $\times$ 10$^{6}$
+            \item 3.40 $\times$ 10$^{7}$
+            \item 4.40 $\times$ 10$^{7}$
+        \end{enumerate}
+    \end{multicols}
+\end{enumerate}
+\end{document}
+
