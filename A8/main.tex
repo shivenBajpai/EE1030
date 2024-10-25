@@ -126,13 +126,13 @@
     \item Consider a simply supported beam of length $2L$ with an overhang of length $L$, loaded by an end moment $M$, as shown below. \\
     
     \begin{center}
-        \begin{circuitikz}
+        \begin{circuitikz}[scale=0.5]
             \tikzstyle{every node}=[font=\LARGE]
             \draw [ line width=1.8pt](6.75,12.5) to[short] (17,12.5);
         \draw [line width=0.9pt, ->, >=Stealth] (16.5,13.5) .. controls (17.5,13) and (17.5,12) .. (16.5,11.5) ;
-        \node [font=\LARGE] at (18,12.5) {M};
-        \node [font=\LARGE] at (14.5,12) {L};
-        \node [font=\LARGE] at (8.75,12) {L};
+        \node [font=\normalsize] at (18,12.5) {M};
+        \node [font=\normalsize] at (14.5,12) {L};
+        \node [font=\normalsize] at (8.75,12) {L};
         \draw [line width=0.2pt, short] (6.75,12.5) -- (6.5,12);
         \draw [line width=0.2pt, short] (6.75,12.5) -- (7,12);
         \draw [line width=0.2pt, short] (6.5,12) -- (7,12);
@@ -159,65 +159,67 @@
     \end{center}
 
     The bending moment distribution for this beam is  \hfill (GATE AE 2009)
-    \begin{enumerate}
-        \item
-            \begin{minipage}[c]{0.9\linewidth}
-            \centering
-            \begin{circuitikz}
-            \tikzstyle{every node}=[font=\LARGE]
-            \draw [line width=0.2pt, short] (6.5,12.25) -- (14,12.25);
-            \draw [line width=1.4pt, short] (6.5,12.25) -- (10.5,11.5);
-            \draw [line width=1.4pt, short] (10.5,11.5) -- (14,13.25);
-            \draw [line width=1.4pt, short] (14,13.25) -- (14,12.25);
-            \end{circuitikz}
-            \end{minipage}\\\\
-            
-        \item 
-            \begin{minipage}[c]{0.9\linewidth}
-            \centering
-            \begin{circuitikz}
-            \tikzstyle{every node}=[font=\LARGE]
-            \draw [line width=0.2pt, short] (6.5,12.25) -- (14,12.25);
-            \draw [line width=1.4pt, short] (6.5,12.25) -- (10.5,11.25);
-            \draw [line width=1.4pt, short] (10.5,11.25) -- (14,11.25);
-            \draw [line width=1.4pt, short] (14,12.25) -- (14,11.25);
-            \end{circuitikz}
-            \end{minipage}\\\\
-            
-        \item 
-            \begin{minipage}[c]{0.9\linewidth}
-            \centering
-            \begin{circuitikz}
-            \tikzstyle{every node}=[font=\LARGE]
-            \draw [line width=0.2pt, short] (7.25,11.25) -- (15.25,11.25);
-            \draw [line width=1.4pt, short] (7.25,11.25) -- (7.25,12.25);
-            \draw [line width=1.4pt, short] (7.25,12.25) -- (11.25,12.25);
-            \draw [line width=1.4pt, short] (11.25,12.25) -- (15.25,11.25);
-            \end{circuitikz}
-            \end{minipage}\\\\
-            
-        \item 
-            \begin{minipage}[c]{0.9\linewidth}
-            \centering
-            \begin{circuitikz}
-            \tikzstyle{every node}=[font=\LARGE]
-            \draw [line width=0.2pt, short] (7.25,11.25) -- (15.25,11.25);
-            \draw [line width=1.4pt, short] (7.25,11.25) -- (7.25,12.25);
-            \draw [line width=1.4pt, short] (7.25,12.25) -- (11.25,10.25);
-            \draw [line width=1.4pt, short] (11.25,10.25) -- (11.25,11.25);
-            \draw [line width=1.4pt, short] (11.25,11.25) -- (15.25,11.25);
-            \end{circuitikz}
-            \end{minipage}\\\\
-    \end{enumerate}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item
+                \begin{minipage}[c]{0.9\linewidth}
+                \centering
+                \begin{circuitikz}[scale=0.5]
+                \tikzstyle{every node}=[font=\LARGE]
+                \draw [line width=0.2pt, short] (6.5,12.25) -- (14,12.25);
+                \draw [line width=1.4pt, short] (6.5,12.25) -- (10.5,11.5);
+                \draw [line width=1.4pt, short] (10.5,11.5) -- (14,13.25);
+                \draw [line width=1.4pt, short] (14,13.25) -- (14,12.25);
+                \end{circuitikz}
+                \end{minipage}\\\\
+                
+            \item 
+                \begin{minipage}[c]{0.9\linewidth}
+                \centering
+                \begin{circuitikz}[scale=0.5]
+                \tikzstyle{every node}=[font=\LARGE]
+                \draw [line width=0.2pt, short] (6.5,12.25) -- (14,12.25);
+                \draw [line width=1.4pt, short] (6.5,12.25) -- (10.5,11.25);
+                \draw [line width=1.4pt, short] (10.5,11.25) -- (14,11.25);
+                \draw [line width=1.4pt, short] (14,12.25) -- (14,11.25);
+                \end{circuitikz}
+                \end{minipage}\\\\
+                
+            \item 
+                \begin{minipage}[c]{0.9\linewidth}
+                \centering
+                \begin{circuitikz}[scale=0.5]
+                \tikzstyle{every node}=[font=\LARGE]
+                \draw [line width=0.2pt, short] (7.25,11.25) -- (15.25,11.25);
+                \draw [line width=1.4pt, short] (7.25,11.25) -- (7.25,12.25);
+                \draw [line width=1.4pt, short] (7.25,12.25) -- (11.25,12.25);
+                \draw [line width=1.4pt, short] (11.25,12.25) -- (15.25,11.25);
+                \end{circuitikz}
+                \end{minipage}\\\\
+                
+            \item 
+                \begin{minipage}[c]{0.9\linewidth}
+                \centering
+                \begin{circuitikz}[scale=0.5]
+                \tikzstyle{every node}=[font=\LARGE]
+                \draw [line width=0.2pt, short] (7.25,11.25) -- (15.25,11.25);
+                \draw [line width=1.4pt, short] (7.25,11.25) -- (7.25,12.25);
+                \draw [line width=1.4pt, short] (7.25,12.25) -- (11.25,10.25);
+                \draw [line width=1.4pt, short] (11.25,10.25) -- (11.25,11.25);
+                \draw [line width=1.4pt, short] (11.25,11.25) -- (15.25,11.25);
+                \end{circuitikz}
+                \end{minipage}\\\\
+        \end{enumerate}
+    \end{multicols}
 
     \item {For the spring-mass system shown below, the natural frequencies are  \hfill (GATE AE 2009)\\
         \begin{center}
-            \begin{circuitikz}
+            \begin{circuitikz}[scale=0.5]
                 \tikzstyle{every node}=[font=\normalsize]
                 \draw [ line width=0.2pt ] (5.25,12.75) rectangle (7.75,11.75);
                 \draw [ line width=0.2pt ] (11,12.75) rectangle (13.5,11.75);
                 \draw [ line width=0.2pt](7.75,12.25) to[R] (11,12.25);
-                \node [font=\normalsize] at (9.375,12.75) {k};
+                \node [font=\normalsize] at (9.375,13.25) {k};
                 \node [font=\normalsize] at (6.5,12.25) {$m_1$};
                 \node [font=\normalsize] at (12.25,12.25) {$m_2$};
             \end{circuitikz}
@@ -371,6 +373,7 @@
          
          \draw[<->] (0,4.5) -- (2,4.5);
          \node at (1,4.7) {50 mm};
+         \node at (3.9,1) {};
      \end{tikzpicture}
    \end{center}
     
