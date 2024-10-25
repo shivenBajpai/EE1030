@@ -1,0 +1,296 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+%\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+
+%\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+
+
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+% Marks the beginning of the document
+\begin{document}
+\onecolumn
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+%\renewcommand{\theequation}{\theenumi}
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{GATE - CE - 2010 - 40 - 52}
+\author{ai24btech11030 - Shiven Bajpai}
+\maketitle
+
+\iffalse
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 
+    \item 
+    \item 
+    \item 
+\end{enumerate}
+\end{multicols}
+\fi
+
+\begin{enumerate}
+        
+    \item For a rectangular channel section, Group-I lists geometrical elements and Group-II gives proportions for hydraulically efficient section.
+    \begin{table}[h!]
+        \begin{center}
+            \begin{tabular}{l|l}
+            \textbf{Group-I} & \textbf{Group-II} \\ \hline
+            P. Top width & 1. $\frac{y_e}{2}$ \\
+            Q. Perimeter & 2. $y_e$ \\
+            R. Hydraulic Radius & 3. $2y_e$ \\
+            S. Hydraulic Depth & 4. $4y_e$ \\
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    $y_e$ is the flow depth corresponding to hydraulically efficient section. The correct match of \textbf{Group-I} with \textbf{Group-II} is \hfill (GATE CE 2010)
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item P-2, Q-4, R-1, S-3
+            \item P-3, Q-1, R-4, S-2
+            \item P-3, Q-4, R-1, S-2
+            \item P-3, Q-4, R-2, S-1
+        \end{enumerate}
+    \end{multicols}
+
+    \item The Froude number of flow in a rectangular channel is 0.8. If the depth of flow is 1.5 m, the critical depth is \hfill (GATE CE 2010)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 1.80 m
+            \item 1.56 m
+            \item 1.36 m
+            \item 1.29 m
+        \end{enumerate}
+    \end{multicols}
+
+    \item A well of diameter 20 cm fully penetrates a confined aquifer. After a long period of pumping at a rate of 2720 litres per minute, the observations of drawdown taken at  
+    10 m and 100 m distances from the center of the well are found to be 3 m and 0.5 m respectively. The transmissivity of the aquifer  
+    is \hfill (GATE CE 2010)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $676 \text{ m}^2$/day
+            \item $576 \text{ m}^2$/day
+            \item $526 \text{ m}^2$/day
+            \item $249 \text{ m}^2$/day
+        \end{enumerate}
+    \end{multicols}
+
+    \item If the BOD$_3$ of a wastewater sample is 75 mg/l, and reaction rate constant k (base e) is 0.345 per day, the amount of BOD remaining in the given sample after 10 days is   \hfill (GATE CE 2010)
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 3.21 mg/L
+            \item 3.45 mg/L
+            \item 3.69 mg/L
+            \item 3.92 mg/L
+        \end{enumerate}
+    \end{multicols}
+
+    \item Consider the following statements in the context of geometric design of roads:
+    \begin{enumerate}
+        \item[] I: A simple parabolic curve is an acceptable shape for summit curves.
+        \item[] II: Comfort to passengers is an important consideration in the design of summit curves.
+    \end{enumerate}
+    The correct option evaluating the above statements and their relationship is   \hfill (GATE CE 2010)
+
+    \begin{enumerate}
+        \item I is true, II is false
+        \item I is true, II is true, and II is the correct reason for I
+        \item I is true, II is true, and II is NOT the correct reason for I
+        \item I is false, II is true
+    \end{enumerate}
+
+    \item The design speed for a two-lane road is 80 kmph. When a design vehicle with a wheelbase of 6.6 m is negotiating a horizontal curve on  
+    that road, the off-tracking is measured as 0.096 m. The required widening of the carriageway of the two-lane road on the curve is approximately   \hfill (GATE CE 2010)
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 0.55 m
+            \item 0.65 m
+            \item 0.75 m
+            \item 0.85 m
+        \end{enumerate}
+    \end{multicols}
+
+    \item Consider the following statements in the context of cement concrete pavements:
+    \begin{enumerate}
+        \item[] I: Warping stresses in cement concrete pavements are caused by the seasonal variation in temperature.
+        \item[] II: Tie bars are generally provided across transverse joints of cement concrete pavements.
+    \end{enumerate}
+    The correct option evaluating the above statements  
+    is \hfill (GATE CE 2010)
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item I: True, II: False
+            \item I: False, II: True
+            \item I: True, II: True
+            \item I: False, II: False
+        \end{enumerate}
+    \end{multicols}
+
+
+    \item A benchmark has been established at the soffit of an ornamental arch at the known elevation of 100.0 m above mean sea level. The back sight used to establish height of instrument is an inverted staff reading of 2.105 m. A forward sight reading with normally held staff of 1.105 m is taken on a recently constructed plinth. The elevation of the plinth is \hfill (GATE CE 2010)
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 103.210 m
+            \item 101.000 m
+            \item 99.000 m
+            \item 96.790 m
+        \end{enumerate}
+    \end{multicols}
+
+    \section*{Common Data Questions}
+
+    \textbf{Common Data for Questions 48 and 49:}
+
+    Ion concentrations obtained for a groundwater sample (having pH = 8.1) are given below:
+
+    \begin{table}[h!]
+        % \centering
+        \begin{center}
+            \begin{tabular}{|l|l|l|l|l|l|l|}
+                \hline
+                \textbf{Ion} & $\text{Ca}^{2+}$ & $\text{Mg}^{2+}$ & $\text{Na}^+$ & $\text{HCO}_3^-$ & $\text{SO}_4^{2-}$ & $\text{Cl}^-$ \\ \hline
+                \textbf{Ion conc.} & 100 & 6 & 15 & 250 & 45 & 39 \\ 
+                \textbf{(mg/L)} & & & & & & \\
+                \hline
+                \textbf{Atomic} & $\text{Ca} = 40$ & $\text{Mg} = 24$ & $\text{Na} = 23$ & $\text{H} = 1,$ & $\text{S} = 32,$ & $\text{Cl} = 35.5$ \\
+                \textbf{Weight} & & & & $\text{C} = 12,$ &  $\text{O} = 16$  & \\
+                & & & & $\text{O} = 16$ & & \\ \hline
+            \end{tabular}\\
+        \end{center}
+    \end{table}
+
+    
+    \item Total hardness (mg/L as CaCO$_3$) present in the above water sample is \hfill (GATE CE 2010)
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 205
+            \item 250
+            \item 275
+            \item 308
+        \end{enumerate}
+    \end{multicols}
+
+    
+    \item Carbonate hardness (mg/L as CaCO$_3$) present in the above water sample is \hfill (GATE CE 2010)
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 205
+            \item 250
+            \item 275
+            \item 289
+        \end{enumerate}
+    \end{multicols}
+
+     \textbf{Common Data for Questions 50 and 51:}
+
+    
+    The moisture holding capacity of the soil in a 100 hectare farm is 18 cm/m. The field is to be irrigated when 50 percent of the available moisture in the root zone is depleted. The irrigation water is to be supplied by a pump working for 10 hours a day, and water application efficiency is 75 percent. Details of crops planned for cultivation are as follows:
+
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            \textbf{Crop} & \textbf{Root zone depth (m)} & \textbf{Peak rate of moisture use (mm/day)} \\ \hline
+            X & 1.0 & 5.0 \\ \hline
+            Y & 0.8 & 4.0 \\ \hline
+        \end{tabular}
+    \end{table}
+
+    
+    \item The capacity of the irrigation system required to irrigate crop `X' in 36 hectares is \hfill (GATE CE 2010)
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 83 litres/sec
+            \item 67 litres/sec
+            \item 57 litres/sec
+            \item 53 litres/sec
+        \end{enumerate}
+    \end{multicols}
+
+    
+    \item The area of crop `Y' that can be irrigated when the available capacity of irrigation system is 40 litres/sec is \hfill (GATE CE 2010)
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 40 hectares
+            \item 36 hectares
+            \item 30 hectares
+            \item 27 hectares
+        \end{enumerate}
+    \end{multicols}
+
+    \section*{Linked Answer Questions}
+
+    \textbf{Statement for Linked Answer Questions 52 and 53:}
+
+    A doubly reinforced rectangular concrete beam has a width of 300 mm and an effective depth of 500 mm. The beam is reinforced with 2200 mm$^2$ of steel in tension and 628 mm$^2$ of steel in compression. The effective cover for compression steel is 50 mm. Assume that both tension and compression steel yield. The grades of concrete and steel used are M20 and Fe250, respectively. The stress block parameters (rounded off to first two decimal places) for concrete shall be as per IS 456:2000.\\
+
+    \item The depth of neutral axis is \hfill (GATE CE 2010)
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 205.30 mm
+            \item 184.56 mm
+            \item 160.91 mm
+            \item 145.30 mm
+        \end{enumerate}
+    \end{multicols}
+
+\end{enumerate}
+\end{document}
+
