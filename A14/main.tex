@@ -1,0 +1,278 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+%\newcommand{\define}{\stackrel{\triangle}{=}}
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+
+%\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+
+
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+% Marks the beginning of the document
+\begin{document}
+\onecolumn
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+%\renewcommand{\theequation}{\theenumi}
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{GATE - ME - 2020 - 53 - 65}
+\author{ai24btech11030 - Shiven Bajpai}
+\maketitle
+
+\iffalse
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 
+    \item 
+    \item 
+    \item 
+\end{enumerate}
+\end{multicols}
+\fi
+
+\begin{enumerate}
+    
+\item A cylindrical bar with $200 \, \text{mm}$ diameter is being turned with a tool having geometry $0^\circ - 9^\circ - 7^\circ - 8^\circ - 15^\circ - 30^\circ - 0.05 \, \text{inch}$ (Coordinate system, ASA) resulting in a cutting force $F_{c1}$. If the tool geometry is changed to $0^\circ - 9^\circ - 7^\circ - 8^\circ - 15^\circ - 0^\circ - 0.05 \, \text{inch}$ (Coordinate system, ASA) and all other parameters remain unchanged, the cutting force changes to $F_{c2}$. Specific cutting energy $(\text{in J/mm}^3)$ is $U_c = U_0 t_1^{-0.4}$, where $U_0$ is the specific energy coefficient, and $t_1$ is the uncut thickness in mm. The value of percentage change in cutting force $F_{c2}$ i.e. $\left( \frac{F_{c2} - F_{c1}}{F_{c1}} \right) \times 100$, is \ldots\ldots \ (round off to one decimal place). \hfill (GATE ME 2020)
+
+\item There are two identical shaping machines $S_1$ and $S_2$. In machine $S_2$, the width of the workpiece is increased by $10\%$ and the feed is decreased by $10\%$, with respect to that of $S_1$. If all other conditions remain the same then the ratio of total time per pass in $S_1$ and $S_2$ will be \ldots\ldots \ (round off to one decimal place). \hfill (GATE ME 2020)
+
+\item
+Bars of $250 \, \text{mm}$ length and $25 \, \text{mm}$ diameter are to be turned on a lathe with a feed of $0.2 \, \text{mm/rev}$. Each regrinding of the tool costs Rs. $20$. The time required for each tool change is $1 \, \text{min}$. Tool life equation is given as $VT^{0.2} = 24$ (where cutting speed $V$ is in $\text{m/min}$ and tool life $T$ is in $\text{min}$). The optimum tool cost per piece for maximum production rate is Rs. \ldots\ldots\ldots \ (round off to 2 decimal places). \hfill (GATE ME 2020)
+
+\item
+A point `$P$' on a CNC controlled $XY$-stage is moved to another point `$Q$' using the coordinate system shown in the figure below and rapid positioning command (G00).
+
+\begin{center}
+\resizebox{0.5\textwidth}{!}{
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw [->, >=Stealth] (0,0) -- (0,7.5) node[above] at ++(0,0.125) {Y};
+\draw [->, >=Stealth] (0,0) -- (10.5,0) node[right] at ++(0.125,0) {X};
+
+\draw (1,-0.25) -- ++(0,0.5) node at ++(-0.1,-0.75) {100};
+\draw (2,-0.25) -- ++(0,0.5) node at ++(-0.1,-0.75) {200};
+\draw (3,-0.25) -- ++(0,0.5) node at ++(-0.1,-0.75) {300};
+\draw (4,-0.25) -- ++(0,0.5) node at ++(-0.1,-0.75) {400};
+\draw (5,-0.25) -- ++(0,0.5) node at ++(-0.1,-0.75) {500};
+\draw (6,-0.25) -- ++(0,0.5) node at ++(-0.1,-0.75) {600};
+\draw (7,-0.25) -- ++(0,0.5) node at ++(-0.1,-0.75) {700};
+\draw (8,-0.25) -- ++(0,0.5) node at ++(-0.1,-0.75) {800};
+\draw (9,-0.25) -- ++(0,0.5) node at ++(-0.1,-0.75) {900};
+\draw (10,-0.25) -- ++(0,0.5) node at ++(0,-0.75) {1000};
+
+\draw (-0.25,1) -- ++(0.5,0) node at ++(-1,0) {100};
+\draw (-0.25,2) -- ++(0.5,0) node at ++(-1,0) {200};
+\draw (-0.25,3) -- ++(0.5,0) node at ++(-1,0) {300};
+\draw (-0.25,4) -- ++(0.5,0) node at ++(-1,0) {400};
+\draw (-0.25,5) -- ++(0.5,0) node at ++(-1,0) {500};
+\draw (-0.25,6) -- ++(0.5,0) node at ++(-1,0) {600};
+\draw (-0.25,7) -- ++(0.5,0) node at ++(-1,0) {700};
+
+\draw  (2,3) circle (0.1cm) node[right] at ++(0,-0.375) {P (200,300)};
+\draw  (8,6) circle (0.1cm) node[right] at ++(0,-0.375) {Q (800,600)};
+
+\end{circuitikz}
+}
+\end{center}
+
+A pair of stepping motors with maximum speed of $800 \, \text{rpm}$, controlling both the $X$ and $Y$ motion of the stage, are directly coupled to a pair of lead screws, each with a uniform pitch of $0.5 \, \text{mm}$. The time needed to position the point `$P$' to the point `$Q$' is \ldots\ldots \ minutes (round off to 2 decimal places). \hfill (GATE ME 2020)
+
+\item
+For a single item inventory system, the demand is continuous, which is $10000$ per year. The replenishment is instantaneous and backorders $(S \text{ units})$ per cycle are allowed as shown in the figure.
+
+\begin{center}
+    
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [->, >=Stealth] (4.5,12.5) -- (4.5,18);
+\draw [->, >=Stealth] (4.5,12.5) -- (13,12.5);
+\node [font=\LARGE] at (4.5,18.25) {Inventory};
+\node [font=\LARGE] at (13,12) {Time};
+\draw [short] (4.5,16) -- (6.25,11.25);
+\draw [short] (6.25,11.25) -- (6.25,16);
+\draw [short] (6.25,16) -- (8,11.25);
+\draw [short] (8,11.25) -- (8,16);
+\draw [short] (8,16) -- (9.5,11.25);
+\draw [<->, >=Stealth] (4.5,12.5) -- (4.5,11.25);
+\draw [<->, >=Stealth] (4,16) -- (4,11.25);
+\node [font=\LARGE] at (3.625,13.75) {Q};
+\node [font=\LARGE] at (4.875,11.875) {S};
+\end{circuitikz}
+}%
+\end{center}
+
+As soon as the quantity $(Q \text{ units})$ ordered from the supplier is received, the backordered quantity is issued to the customers. The ordering cost is Rs. $300$ per order. The carrying cost is Rs. $4$ per unit per year. The cost of backordering is Rs. $25$ per unit per year. Based on the total cost minimization criteria, the maximum inventory reached in the system is \ldots\ldots \ (round off to nearest integer). \hfill (GATE ME 2020)
+
+\item Consider a flow through a nozzle, as shown in the figure below. 
+
+\begin{center}
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+% \tikzstyle{every node}=[font=\large]
+\draw [dashed] (6,23.5) -- (6,19.5);
+\draw [dashed] (10.25,23.5) -- (10.25,19.5);
+\draw [short] (6,21.5) -- (10.25,21.5);
+\draw [->, >=Stealth] (6,21.5) -- (7.75,21.5);
+\node at (6.79, 21.75) {streamline};
+\draw [short] (6,22.75) .. controls (8.25,23) and (8,22) .. (10.25,22);
+\draw [short] (6,20.25) .. controls (8.25,20.25) and (8,21) .. (10.25,21);
+\draw  (9.875,23.5) rectangle node {2} (10.625,24.25);
+\draw  (5.675,23.5) rectangle node {1} (6.375,24.25);
+
+% Section 1
+\node[left] at (6, 21.9) {$p_1$};
+\node[left] at (6, 21.5) {$v_1$};
+\node[left] at (6, 21.1) {$A_1 = 0.2 \, \text{m}^2$};
+
+% Section 2
+\node[right] at (10.25,21.9) {$p_2 = p_{\text{atm}}$};
+\node[right] at (10.25,21.5) {$v_2 = 50 \, \text{m/s}$};
+\node[right] at (10.25,21.1) {$A_2 = 0.02 \, \text{m}^2$};
+
+\end{circuitikz}
+}%
+\end{center}
+
+
+The air flow is steady, incompressible and inviscid. The density of air is $1.23 \, \text{kg/m}^3$. The pressure difference, $(p_1 - p_{\text{atm}})$ is \underline{\hspace{3cm}} kPa (round off to 2 decimal places). \hfill (GATE ME 2020)
+
+\item
+Water (density $1000 \, \text{kg/m}^3$) flows through an inclined pipe of uniform diameter. The velocity, pressure and elevation at section $A$ are $V_A = 3.2 \, \text{m/s}$, $p_A = 186 \, \text{kPa}$ and $z_A = 24.5 \, \text{m}$, respectively, and those at section $B$ are $V_B = 3.2 \, \text{m/s}$, $p_B = 260 \, \text{kPa}$ and $z_B = 9.1 \, \text{m}$, respectively. If acceleration due to gravity is $10 \, \text{m/s}^2$ then the head lost due to friction is \underline{\hspace{3cm}} m (round off to one decimal place). \hfill (GATE ME 2020)
+
+\item
+The spectral distribution of radiation from a black body at $T_1 = 3000 \, \text{K}$ has a maximum at wavelength $\lambda_{\text{max}}$. The body cools down to a temperature $T_2$. If the wavelength corresponding to the maximum of the spectral distribution at $T_2$ is $1.2$ times of the original wavelength $\lambda_{\text{max}}$, then the temperature $T_2$ is \underline{\hspace{3cm}} K (round off to the nearest integer). \hfill (GATE ME 2020)
+
+\item
+Water flows through a tube of $3 \, \text{cm}$ internal diameter and length $20 \, \text{m}$. The outside surface of the tube is heated electrically so that it is subjected to uniform heat flux circumferentially and axially. The mean inlet and exit temperatures of the water are $10^\circ \text{C}$ and $70^\circ \text{C}$, respectively. The mass flow rate of the water is $720 \, \text{kg/h}$. Disregard the thermal resistance of the tube wall. The internal heat transfer coefficient is $1697 \, \text{W/m}^2\cdot\text{K}$. Take specific heat $C_p$ of water as $4.179 \, \text{kJ/kg}\cdot\text{K}$. The inner surface temperature at the exit section of the tube is \underline{\hspace{3cm}} $^\circ \text{C}$ (round off to one decimal place). \hfill (GATE ME 2020)
+
+\item
+Air is contained in a frictionless piston-cylinder arrangement as shown in the figure.
+
+\begin{center}    
+\resizebox{0.6\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw  (4,23.25) rectangle (11,21.75);
+\draw  (4,24.5) rectangle (11,23.25);
+\draw [short] (4,27.75) -- (4,23.25);
+\draw [short] (11,27) -- (11,24);
+\draw [short] (6.75,25.75) -- (13.25,25.75);
+\draw [short] (11,24.5) -- (13.25,24.5);
+\draw [short] (11,27) -- (13.25,27);
+\draw [short] (11,28) -- (11,26.75);
+\draw [short] (10.5,27) -- (11,27);
+\draw [<->, >=Stealth] (11.5,27) -- (11.5,25.75);
+\draw [<->, >=Stealth] (11.5,25.75) -- (11.5,24.5);
+\draw  (11,27) rectangle (10.5,27.5);
+\draw  (4,27) rectangle (4.5,27.5);
+\draw [short] (6.75,28.25) -- (8.25,28.25);
+\draw (7.5,28.25) to[R] (7.5,25.75);
+\node [font=\large] at (7.5,23.75) {Piston};
+\node [font=\large] at (7.5,22.5) {Air};
+\node [font=\normalsize] at (5,27.25) {Stop};
+\node [font=\normalsize] at (12,26.375) {8 cm};
+\node [font=\normalsize] at (12,25.125) {8 cm};
+\node [font=\normalsize] at (10.25,21.25) {Q};
+\draw [->, >=Stealth] (10,21.25) -- (10,22.25);
+\node at (1.75,24.5) {};
+\end{circuitikz}
+}%
+\end{center}
+
+The atmospheric pressure is $100 \, \text{kPa}$ and the initial pressure of air in the cylinder is 105 kPa. The area of piston is $300 \, \text{cm}^2$. Heat is now added and the piston moves slowly from its initial position until it reaches the stops. The spring constant of the linear spring is $12.5 \, \text{N/mm}$. Considering the air inside the cylinder as the system, the work interaction is \ldots\ldots \ J (round off to the nearest integer). \hfill (GATE ME 2020)
+
+\item
+Moist air at $105 \, \text{kPa}$, $30^\circ$C and $80\%$ relative humidity flows over a cooling coil in an insulated air-conditioning duct. Saturated air exits the duct at $100  \,\text{kPa}$ and $15^\circ$C. The saturation pressures of water at $30^\circ$C and $15^\circ$C are $4.24 \, \text{kPa}$ and $1.7 \, \text{kPa}$ respectively. Molecular weight of water is $18 \, \text{g/mol}$ and that of air is $28.94 \, \text{g/mol}$. The mass of water condensing out from the duct is \ldots\ldots \ g/kg of dry air (round off to the nearest integer). \hfill (GATE ME 2020)
+
+\item
+In a steam power plant, superheated steam at $10 \, \text{MPa}$ and $500^\circ$C, is expanded isentropically in a turbine until it becomes a saturated vapour. It is then reheated at constant pressure to $500^\circ$C. The steam is next expanded isentropically in another turbine until it reaches the condenser pressure of $20 \, \text{kPa}$. Relevant properties of steam are given in the following two tables. The work done by both the turbines together is \ldots\ldots \ kJ/kg (round off to the nearest integer). \hfill (GATE ME 2020)
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+        \hline
+        \multicolumn{4}{|c|}{Superheated Steam Table} \\
+        \hline
+        Pressure, $p$ (MPa) & Temperature, $T$ ($^\circ$C) & Enthalpy, $h$ (kJ/kg) & Entropy, $s$ (kJ/kg.K) \\
+        \hline
+        10 & 500 & 3373.6 & 6.5965 \\
+        1 & 500 & 3478.4 & 7.7621 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        \multicolumn{6}{|c|}{Saturated Steam Table} \\
+        \hline
+        Pressure, $p$ & Sat. Temp., $T_\text{sat}$ ($^\circ$C) & \multicolumn{2}{|c|}{ Enthalpy, $h$ (kJ/kg)} & \multicolumn{2}{|c|}{Entropy, $s$ (kJ/kg.K)} \\
+        \cline{3-6}
+        & & $h_f$ & $h_g$ & $s_f$ & $s_g$ \\
+        \hline
+        1 MPa & 179.91 & 762.9 & 2778.1 & 2.1386 & 6.5965 \\
+        20 kPa & 60.06 & 251.38 & 2609.7 & 0.8319 & 7.9085 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+\item Keeping all other parameters identical, the Compression Ratio (CR) of an air standard diesel engine is increased from 15 to 21. Take ratio of specific heats $= 1.3$ and cut-off ratio of the cycle $r_c = 2$.
+
+The difference between the new and the old efficieny values, in percentage 
+
+$(\eta_{new}|_{CR=21}) - (\eta_{old}|_{CR=15}) = \ldots\ldots \%$\ (round off to one decimal places). \hfill (GATE ME 2020)
+
+\end{enumerate}
+\end{document}
+
