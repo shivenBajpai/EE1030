@@ -1,25 +1,23 @@
-import numpy as np
-import math
 import matplotlib.pyplot as plt
+import numpy as np
+from common import *
 
 plt.figure(figsize = (8,8))
 
 # Define the function
-f1 = lambda x: math.e**(1.41421*x) if x<0 else math.e**(-3.41421*x)
-vf1 = np.vectorize(f1)
+g1 = g_gen(3.41421, 1.41421)
+g2 = g_gen(1.41421, 3.41421)
 
-f2 = lambda x: math.e**(3.41421*x) if x<0 else math.e**(-1.41421*x)
-vf2 = np.vectorize(f2)
+k1 = -5
+k2 = 5
+xG1 = func_gen(g1, k1, k2)
+xG2 = func_gen(g2, k1, k2)
 
-# Plot curve
-x = np.linspace(-5,5,101) # Odd amount to ensure there is a sample point at x=0
-y1 = vf1(x)
-y2 = vf2(x)
+# Plotting functions
+plt.plot(xG1[:,0], xG1[:,1], 'r', label="g(x) for x4")
+plt.plot(xG1[:,0], xG2[:,1], 'g', label="g(x) for x2")
 
-plt.plot(x, y1, 'r', label="g(x) for x4")
-plt.plot(x, y2, 'g', label="g(x) for x2")
-
-# For saving as png
+# Configuring Plot
 ax = plt.gca()
 ax.spines['top'].set_color('none')
 ax.spines['left'].set_position('zero')
