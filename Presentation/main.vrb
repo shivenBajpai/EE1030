@@ -1,0 +1,6 @@
+\frametitle{Plot}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\textwidth]{figs/Alt_Figure.png}
+	\end{figure}
