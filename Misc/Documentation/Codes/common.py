@@ -10,9 +10,9 @@ def func_gen(f, k1, k2):
     return np.hstack((x,y))
 
 # Returns function g given parameters a and b
-def g_gen(a,b):
+def func_param(a,b):
     return lambda x: np.e**(b*x) if x<0 else np.e**(-a*x)
 
 # Returns inverse function of both parts of g given parameters a and b
-def ginv_right_gen(a,b):
+def func_inv_param(a,b):
     return lambda x: np.log(x)/(b), lambda x: np.log(x)/(-a)

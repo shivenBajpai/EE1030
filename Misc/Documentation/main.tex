@@ -72,23 +72,23 @@
 
 \textbf{Question: } Given that
 \begin{align}
-	g(t) &= e^{-at}u(t) + e^{bt}u(-t) \label{q1}\\
+	f(t) &= e^{-at}u(t) + e^{bt}u(-t) \label{q1}\\
 	u(t) &= \begin{cases}
 		0, & t<0\\
 		\frac{1}{2}, & t=0 \\
 		1, & t>0
 	\end{cases} \label{q2}\\
-	\int_{-\infty}^{\infty} g(t) &= 1 \label{q3}
+	\int_{-\infty}^{\infty} f(t) &= 1 \label{q3}
 \end{align}
 
-Find the possible values of $(a,b)$ if these are the end points of the latus recta of the associated conic. Plot $g(t)$ for these values of $(a,b)$
+Find the possible values of $(a,b)$ if these are the end points of the latus recta of the associated conic. Plot $f(t)$ for these values of $(a,b)$
 
 \bigskip
 
 \textbf{Solution: } We expand the integral as 
 
 \begin{align}
-	\int_{-\infty}^{\infty} g(t) &= \int_{-\infty}^{0} g(t) + \int_{0}^{\infty} g(t)\\
+	\int_{-\infty}^{\infty} f(t) &= \int_{-\infty}^{0} f(t) + \int_{0}^{\infty} g(t)\\
 	&= \int_{-\infty}^{0} e^{bt} + \int_{0}^{\infty} e^{-at}\\
 	&= \frac{1}{b} + \frac{1}{a} \label{integral_result}
 \end{align}
@@ -119,7 +119,7 @@ We eigen decompose $\vec{V}$ as
 
 \begin{align}
 	\vec{V} &= \vec{PDP}^\text{T}\\
-	\vec{P} &= \myvec{\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{-\sqrt{2}} & \frac{1}{\sqrt{2}}}\\
+	\vec{P} &= \myvec{\frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}}\\
 	\vec{D} &= \myvec{\frac{1}{2} & 0 \\ 0 & \frac{-1}{2}}
 \end{align}
 
@@ -156,30 +156,30 @@ Here $\vec{P}_0$ is the reflection matrix $\myvec{0 & 1 \\ 1 & 0}$ and $\vec{D}_
 Now we solve to find the endpoints of the latus recta of this standard conic
 
 \begin{align}
-	\vec{n} &= \sqrt{\lambda_2}\vec{p}_1 = \myvec{\frac{1}{\sqrt{2}} \\ 0}\\
+	\vec{n} &= \sqrt{\lambda_2}\vec{p}_1 = \myvec{0 \\ \frac{1}{\sqrt{2}}}\\
 	e &= \sqrt{1 - \frac{\lambda_1}{\lambda_2}} = \sqrt{2}\\
 	c &= \dfrac{e\vec{u}^\text{T}\vec{n} \pm \sqrt{e^2 (\vec{u}^T \vec{n})^2 - \lambda_2(e^2 - 1)(\Vert \vec{u} \Vert^2-\lambda_2f)}}{\lambda_2e(e^2 - 1)}\\
 	&= \pm \frac{1}{\sqrt{2}}\\
-	\vec{F} &= \dfrac{ce^2\vec{n}-\vec{u}}{\lambda_2} = \pm 2 \vec{e}_1\\
+	\vec{F} &= \dfrac{ce^2\vec{n}-\vec{u}}{\lambda_2} = \pm 2 \vec{e}_2\\
 \end{align}
 
 Equation of latus recta is
 
 \begin{align}
 	\vec{n}^\text{T}\vec{x} &= \vec{n}^\text{T}\vec{F}\\
-	\equiv \vec{n}^\text{T}\vec{x} &= 2 \label{latus_rectum} 
+	\equiv \vec{n}^\text{T}\vec{x} &= \sqrt{2} \label{latus_rectum} 
 \end{align}
 
 Let $\vec{\hat{z}}$ be the endpoints of the latus recta.
 
-From \eqref{latus_rectum} we can say $\vec{\hat{z}}$ is of the form $\myvec{\pm2 \\ k_i}$. Subsituting back in \eqref{standard_conic}
+From \eqref{latus_rectum} we can say $\vec{\hat{z}}$ is of the form $\myvec{k_i \\ \pm2}$. Subsituting back in \eqref{standard_conic}
 
 \begin{align}
 	\vec{z}^\text{T}\vec{D_0}\vec{z} - f_0 &= 0\\
-	-2 + \frac{k_i^2}{2} + 1 &= 0\\
+	-\frac{k_i^2}{2} + 2 - 1 &= 0\\
 	k_i^2 &= 2\\
 	k_i &= \pm \sqrt{2}\\
-	\therefore \vec{\hat{z}} &= \myvec{\pm 2 \\ \pm \sqrt{2}}
+	\therefore \vec{\hat{z}} &= \myvec{\pm \sqrt{2} \\ \pm 2}
 \end{align}
 
 Now transforming $\vec{\hat{z}}$ back using \eqref{t1}, \eqref{t2} to get endpoints of original conic $\vec{\hat{x}}$.
@@ -191,10 +191,10 @@ Now transforming $\vec{\hat{z}}$ back using \eqref{t1}, \eqref{t2} to get endpoi
 Which gives us values of $\vec{\hat{x}}$ to be
 
 \begin{align*}
-	\vec{\hat{x}}_1 &= \myvec{-\sqrt{2} \\ 2-\sqrt{2}}\\
+	\vec{\hat{x}}_1 &= \myvec{2+\sqrt{2} \\ \sqrt{2}}\\
 	\vec{\hat{x}}_2 &= \myvec{\sqrt{2} \\ 2+\sqrt{2}}\\
 	\vec{\hat{x}}_3 &= \myvec{2-\sqrt{2} \\ -\sqrt{2}}\\
-	\vec{\hat{x}}_4 &= \myvec{2+\sqrt{2} \\ \sqrt{2}}\\
+	\vec{\hat{x}}_4 &= \myvec{-\sqrt{2} \\ 2-\sqrt{2}}
 \end{align*}
 
 We can plot out the original conic in \eqref{actual_conic} to verify our solution
@@ -206,21 +206,20 @@ We can plot out the original conic in \eqref{actual_conic} to verify our solutio
 	\label{fig:Hyperbola}
 \end{figure}
 
-Out of these, $\vec{\hat{x}}_1$ and $\vec{\hat{x}}_3$ are unfit to be used as values for $(a, b)$ as negative values of $a$ or $b$ will cause $g(t)$ to tend to infinity near $t = 0$ and thus the integral in \eqref{q3} will not converge and condition will not be met.\\
+Out of these, $\vec{\hat{x}}_1$ and $\vec{\hat{x}}_3$ are unfit to be used as values for $(a, b)$ as negative values of $a$ or $b$ will cause $f(t)$ to tend to infinity near $t = 0$ and thus the integral in \eqref{q3} will not converge and condition will not be met.\\
 
-Lastly, We plot the function $g(t)$ for $(a, b) = \vec{\hat{x}}_2$ and $(a, b) = \vec{\hat{x}}_4$
+Lastly, We plot the function $f(t)$ for $(a, b) = \vec{\hat{x}}_2$ and $(a, b) = \vec{\hat{x}}_4$
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\columnwidth]{Figures/function.png} 
 	\caption{}
 	\label{fig:Function}
-\end{figure}
+\end{figure} 
 
 Code for Figures \ref{fig:Hyperbola} and \ref{fig:Function} can be found at:
 \begin{lstlisting}
-Codes/hyperbola.py
-Codes/function.py
+Codes/solution.py
 \end{lstlisting}
 
 \end{document}
