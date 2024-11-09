@@ -45,7 +45,6 @@
 \setlength{\headheight}{1cm} % Set the height of the header box
 \setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
 
-
 %\usepackage[a5paper, top=10mm, bottom=10mm, left=10mm, right=10mm]{geometry}
 
 
@@ -58,18 +57,19 @@
 \vspace{3cm}
 
 %\renewcommand{\theequation}{\theenumi}
-\numberwithin{equation}{enumi}
-\numberwithin{figure}{enumi}
-\renewcommand{\thefigure}{\theenumi}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+% \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 
 \title{Title Undecided}
 \author{Shiven Bajpai}
 \maketitle
 
-\renewcommand{\thefigure}{\theenumi}
+% \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi} 
 
+\setcounter{section}{1}
 \textbf{Question: } Given that
 \begin{align}
 	f(t) &= e^{-at}u(t) + e^{bt}u(-t) \label{q1}\\
