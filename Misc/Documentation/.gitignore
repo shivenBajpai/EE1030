@@ -3,3 +3,4 @@ Codes/CoordGeo/
 /main.*
 !/main.tex
 !/main.pdf
+__pycache__
