@@ -1,0 +1,6 @@
+Codes/CoordGeo/
+.vscode/
+/main.*
+!/main.tex
+!/main.pdf
+__pycache__
