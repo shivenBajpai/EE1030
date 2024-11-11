@@ -88,7 +88,7 @@ Find the possible values of $(a,b)$ if these are the end points of the latus rec
 \textbf{Solution: } We expand the integral as 
 
 \begin{align}
-	\int_{-\infty}^{\infty} f(t) &= \int_{-\infty}^{0} f(t) + \int_{0}^{\infty} g(t)\\
+	\int_{-\infty}^{\infty} f(t) &= \int_{-\infty}^{0} f(t) + \int_{0}^{\infty} f(t)\\
 	&= \int_{-\infty}^{0} e^{bt} + \int_{0}^{\infty} e^{-at}\\
 	&= \frac{1}{b} + \frac{1}{a} \label{integral_result}
 \end{align}
@@ -206,9 +206,9 @@ We can plot out the original conic in \eqref{actual_conic} to verify our solutio
 	\label{fig:Hyperbola}
 \end{figure}
 
-Out of these, $\vec{\hat{x}}_1$ and $\vec{\hat{x}}_3$ are unfit to be used as values for $(a, b)$ as negative values of $a$ or $b$ will cause $f(t)$ to tend to infinity near $t = 0$ and thus the integral in \eqref{q3} will not converge and condition will not be met.\\
+Out of these, $\vec{\hat{x}}_3$ and $\vec{\hat{x}}_4$ are unfit to be used as values for $(a, b)$ as negative values of $a$ or $b$ will cause $f(t)$ to not be finite and thus the integral in \eqref{q3} will not converge and condition will not be met.\\
 
-Lastly, We plot the function $f(t)$ for $(a, b) = \vec{\hat{x}}_2$ and $(a, b) = \vec{\hat{x}}_4$
+Lastly, We plot the function $f(t)$ for $(a, b) = \vec{\hat{x}}_1$ and $(a, b) = \vec{\hat{x}}_2$
 
 \begin{figure}[H]
 	\centering
