@@ -141,7 +141,7 @@ Since eigenvalues of $\vec{D}$ are $\lambda_1 = \frac{1}{2}$ and $\lambda_2=-\fr
 
 \begin{align}
 	\vec{z}^\text{T}\brak{\frac{\vec{D_0}}{f_0}}\vec{z} &= 1\\
-	\vec{z}^\text{T}\vec{D_0}\vec{z} - f_0 &= 0  \label{standard_conic}\\
+	j(\vec{z}) = \vec{z}^\text{T}\vec{D_0}\vec{z} - f_0 &= 0  \label{standard_conic}\\
 	\vec{y} &= \vec{P}_0\vec{z} \label{t2}\\
 \end{align}
 
@@ -167,20 +167,29 @@ Equation of latus recta is
 
 \begin{align}
 	\vec{n}^\text{T}\vec{x} &= \vec{n}^\text{T}\vec{F}\\
-	\equiv \vec{n}^\text{T}\vec{x} &= \sqrt{2} \label{latus_rectum} 
+	\equiv \vec{n}^\text{T}\vec{x} &= \sqrt{2}\\
+	\equiv \vec{x} &= \vec{h} + k\vec{m} \label{latus_rectum}\\
+	\vec{h} &= \myvec{0 \\ \pm 2}\\
+	\vec{m} &= \myvec{1 \\ 0}
 \end{align}
 
-Let $\vec{\hat{z}}$ be the endpoints of the latus recta.
-
-From \eqref{latus_rectum} we can say $\vec{\hat{z}}$ is of the form $\myvec{k_i \\ \pm2}$. Subsituting back in \eqref{standard_conic}
+Let $\vec{\hat{z}}$ be the endpoints of the latus recta i.e the intersection of \eqref{latus_rectum} with the conic \eqref{standard_conic}
 
 \begin{align}
-	\vec{z}^\text{T}\vec{D_0}\vec{z} - f_0 &= 0\\
-	-\frac{k_i^2}{2} + 2 - 1 &= 0\\
-	k_i^2 &= 2\\
-	k_i &= \pm \sqrt{2}\\
+	k &= \frac{1}{\vec{m}^\text{T}\vec{D_0}\vec{m}} \brak{-\vec{m}^\text{T}(\vec{D_0h} + \vec{u_0}) \pm \sqrt{\sbrak{\vec{m}^\text{T}(\vec{D_0h} + \vec{u_0})}^2 - j(\vec{h}) (\vec{m}^\text{T}\vec{D_0m})}}\\
+	&= \pm \sqrt{2}\\
 	\therefore \vec{\hat{z}} &= \myvec{\pm \sqrt{2} \\ \pm 2}
 \end{align}
+
+% From \eqref{latus_rectum} we can say $\vec{\hat{z}}$ is of the form $\myvec{k_i \\ \pm2}$. Subsituting back in \eqref{standard_conic}
+
+% \begin{align}
+% 	\vec{z}^\text{T}\vec{D_0}\vec{z} - f_0 &= 0\\
+% 	-\frac{k_i^2}{2} + 2 - 1 &= 0\\
+% 	k_i^2 &= 2\\
+% 	k_i &= \pm \sqrt{2}\\
+% 	\therefore \vec{\hat{z}} &= \myvec{\pm \sqrt{2} \\ \pm 2}
+% \end{align}
 
 Now transforming $\vec{\hat{z}}$ back using \eqref{t1}, \eqref{t2} to get endpoints of original conic $\vec{\hat{x}}$.
 
